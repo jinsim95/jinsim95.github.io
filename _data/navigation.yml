@@ -12,3 +12,5 @@ main:
   #   url: /sitemap/
   - title: "About"
     url: https://jinsim95.github.io/about/
+  - title: "My Github"
+    url: https://github.com/jinsim95
