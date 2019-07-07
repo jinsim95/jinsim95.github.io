@@ -18,9 +18,9 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale                   : "en-US"
 title                    : "Jin's Coding Journal"
 title_separator          : "-"
-name                     : "jinsim95"
-description              : "Daily Review"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+name                     : "Jin Sim"
+description              : "Learning & Reviewing"
+url                      : https://jinsim95.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -107,14 +107,14 @@ analytics:
 # Site Author
 author:
   name             : "Jin Sim"
-  avatar           : "/images/my_bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "jinsim95"
+  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio              : "NYU '21 , CS / ECON"
   location         : "Seoul & NYC"
   email            : smjin55@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      #url: mailto:smjin55@gmail.com
+      # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      #url: "https://github.com/jinsim95"
+      # url: "https://github.com/"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -293,11 +293,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-      values: 
-      layout: single
-      author_profile: true
