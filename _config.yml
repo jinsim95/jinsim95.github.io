@@ -110,11 +110,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "jinsim95"
   location         : "Seoul & NYC"
-  email            :
+  email            : smjin55@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-       url: mailto:smjin55@gmail.com
+      #url: mailto:smjin55@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -126,7 +126,7 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-       url: "https://github.com/jinsim95"
+      #url: "https://github.com/jinsim95"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
