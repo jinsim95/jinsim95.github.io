@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Jin Sim"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/my_bio.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "jinsim95"
   location         : "Seoul & NYC"
   email            : smjin55@gmail.com
