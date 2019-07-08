@@ -31,7 +31,7 @@ author: Jin Sim
 </li>
 </ul>
 <h2 id="print-statement">Print Statement</h2>
-<h4 id="example-">Example )</h4>
+<h4 id="example-">[ Example ]</h4>
 <pre><code>	#include &lt;Windows.h&gt;
 	#include &lt;stdio.h&gt;
 
@@ -49,7 +49,7 @@ author: Jin Sim
     }
 </code></pre>
 <h2 id="operators">Operators</h2>
-<h4 id="types-">Types )</h4>
+<h3 id="types-of-operators-">[ Types of Operators ]</h3>
 <ul>
 <li>Addition	: 	<strong>+</strong></li>
 <li>Subtraction	:	<strong>-</strong></li>
@@ -57,6 +57,30 @@ author: Jin Sim
 <li>Division	:	<strong>/</strong></li>
 <li>Remainder	:	<strong>%</strong></li>
 </ul>
-<h4 id="practice-problem-">Practice Problem )</h4>
-<p>화폐매수출력</p>
+<h3 id="practice-problem-">[ Practice Problem ]</h3>
+<p><strong>Money Sorting Problem :</strong></p>
+<p>You are withdrawing $156.35 of cash from a bank.<br>
+If the bank gives out to you the least number of bills/coins, how many of each bill/coin do you get?</p>
+<pre><code>#include &lt;Windows.h&gt;
+#include &lt;stdio.h&gt;
+
+void main() {
+	int cash;
+	printf("금액을 입력하세요 : "); // 38000
+	scanf("%d", &amp;cash);
+	int fifty_thousand = cash / 50000;
+	int ten_thousand = cash / 10000;
+	int five_thousand = (cash % 10000) / 5000;
+	int one_thousand = (cash % 5000) / 1000;
+	int five_hundred = (cash % 1000) / 500;
+	int one_hundred = (cash % 500) / 100;
+	
+	printf("오만원짜리 %d장\n", fifty_thousand);
+	printf("만원짜리 %d장\n", ten_thousand);
+	printf("오천원짜리 %d장\n", five_thousand);
+	printf("천원짜리 %d장\n", one_thousand);
+	printf("오백원짜리 %d장\n", five_hundred);
+	printf("백원짜리 %d장\n", one_hundred);	
+}
+</code></pre>
 
