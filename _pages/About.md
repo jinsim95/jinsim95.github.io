@@ -1,6 +1,8 @@
 ---
 title: "About"
 permalink: /about/
+header:
+  teaser: /images/nyc-01.jpg
 ---
 
             I'm a NYU student majoring in Computer Science and Economics.
