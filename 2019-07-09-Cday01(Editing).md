@@ -1,6 +1,7 @@
 ---
-title: '[C] Day 1'
+title: '[C] Day 1 (Editing)'
 author: Jin Sim
+tags: 'C, Language, Review, Problems'
 
 ---
 
