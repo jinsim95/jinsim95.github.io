@@ -1,7 +1,6 @@
 ---
-title: '[C] Day 1 (Editing)'
+title: '[C] Day 1'
 author: Jin Sim
-tags: 'C, Language, Review, Problems'
 
 ---
 
@@ -31,7 +30,7 @@ tags: 'C, Language, Review, Problems'
 </code></pre>
 </li>
 </ul>
-<h2 id="print-statement">Print Statement</h2>
+<h2 id="print-statement">01. Print Statement</h2>
 <h4 id="example-">[ Example ]</h4>
 <pre><code>	#include &lt;Windows.h&gt;
 	#include &lt;stdio.h&gt;
@@ -58,30 +57,35 @@ tags: 'C, Language, Review, Problems'
 <li>Division	:	<strong>/</strong></li>
 <li>Remainder	:	<strong>%</strong></li>
 </ul>
-<h3 id="practice-problem-">[ Practice Problem ]</h3>
+<h3 id="challenge-question-">[ Challenge Question ]</h3>
 <p><strong>Money Sorting Problem :</strong></p>
-<p>You are withdrawing $156.35 of cash from a bank.<br>
-If the bank gives out to you the least number of bills/coins, how many of each bill/coin do you get?</p>
-<pre><code>#include &lt;Windows.h&gt;
-#include &lt;stdio.h&gt;
+<p>You are withdrawing $256 of cash from a bank.<br>
+If the bank gives out to you the least number of bills, how many of each bill do you get?<br>
+Assume that the amount of money you withdraw is always an integer (i.e. no coins/cents).</p>
+<p><strong>Sample Solution :</strong></p>
+<pre><code>	#include &lt;Windows.h&gt;
+	#include &lt;stdio.h&gt;
 
-void main() {
-	int cash;
-	printf("금액을 입력하세요 : "); // 38000
-	scanf("%d", &amp;cash);
-	int fifty_thousand = cash / 50000;
-	int ten_thousand = cash / 10000;
-	int five_thousand = (cash % 10000) / 5000;
-	int one_thousand = (cash % 5000) / 1000;
-	int five_hundred = (cash % 1000) / 500;
-	int one_hundred = (cash % 500) / 100;
-	
-	printf("오만원짜리 %d장\n", fifty_thousand);
-	printf("만원짜리 %d장\n", ten_thousand);
-	printf("오천원짜리 %d장\n", five_thousand);
-	printf("천원짜리 %d장\n", one_thousand);
-	printf("오백원짜리 %d장\n", five_hundred);
-	printf("백원짜리 %d장\n", one_hundred);	
-}
+	void main() {
+		int cash;
+		printf("Enter the amount of cash : ");	// e.g. 589 (= $589)
+		scanf("%d", &amp;cash);
+		int hundred_dollar = cash / 100;
+		int fifty_dollar = (cash - hundred_dollar*100) / 50;
+		int twenty_dollar = (cash - hundred_dollar*100 - fifty_dollar*50) / 20;
+		int ten_dollar = (cash - hundred_dollar*100 - fifty_dollar*50 - twenty_dollar*20) / 10;
+		int five_dollar = (cash % 10) / 5;
+		int one_dollar = (cash % 5) / 1;
+			
+		printf("You got : \n");
+		printf("%d $100 bills.\n", hundred_dollar);
+		printf("%d $50 bills.\n", fifty_dollar);
+		printf("%d $20 bills.\n", twenty_dollar);
+		printf("%d $10 bills.\n", ten_dollar);
+		printf("%d $5 bills.\n", five_dollar);
+		printf("%d $1 bills.\n", one_dollar);
+
+		system("pause");
+	}
 </code></pre>
 
