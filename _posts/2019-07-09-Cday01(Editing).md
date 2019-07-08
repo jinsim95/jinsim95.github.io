@@ -1,11 +1,9 @@
 ---
-
+title: '[C] Day 1'
+author: Jin Sim
 
 ---
 
-<hr>
-<h2 id="title-c-day-1categories-c-language-review">title: “[C] Day 1”<br>
-categories: “C language review”</h2>
 <h2 id="basic-outline-of-c-language">Basic Outline of C Language</h2>
 <ol>
 <li>Print Statement</li>
